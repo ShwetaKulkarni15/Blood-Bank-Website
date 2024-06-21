@@ -1,0 +1,1047 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  height: 100%;
+}
+ 
+ 
+/***************************/
+/* Nav 2 Start */
+
+/* Navbar styles */
+#Nav2 .navbar-nav .nav-link {
+  padding: 10px 15px;
+}
+
+#Nav2 .navbar-nav .nav-link.selected {
+  color: darkred;
+  border-bottom: 4px solid darkred;
+}
+
+#Nav2 .navbar-nav .nav-link:hover {
+  color: darkred;
+  border-bottom: 4px solid darkred;
+}
+
+#Nav2 .navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #Nav2 .navbar-nav {
+      margin-top: 10px;
+  }
+  
+  #Nav2 .navbar-toggler {
+      margin-right: 0;
+  }
+  
+  #Nav2 .navbar-collapse {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  #Nav2 .navbar-nav .nav-item {
+      border-right: none;
+  }
+}
+
+ 
+/* Nav 2 End */
+/***************************/
+ 
+/***************************/
+/* Pre-Header Start */
+ 
+#Pre-header {
+  /* background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  height: 600px;
+}
+ 
+/*
+#header .container {
+  width: 37%;
+  margin-right: 0;
+  padding: 30px 35px 40px 10px;
+  text-align: left;
+}
+ 
+#header .container h1 {
+  color: darkred;
+  margin-top: 100px;
+}
+ 
+#header .container h4 {
+  color: rgb(51, 58, 65);
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+ 
+#header .more {
+  color: darkorange;
+  background: rgb(51, 58, 65);
+  font-size: 18px;
+  padding: 5px 35px 5px 35px;
+  margin-left: 0px 18px 0px 5px;
+  border-radius: 5px;
+}
+ 
+#header .more:hover {
+  color: red;
+  transition: color 0.5s;
+} */
+ 
+/* Pre-Header End */
+/***************************/
+ 
+/***************************/
+/* Header Start */
+ 
+#header {
+  background-image: url(../imgs/header2.jpg);
+  background-position: center center;
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+  background-color: white;
+  height: 500px;
+}
+ 
+#header .container {
+  width: 37%;
+  margin-right: 0;
+  padding: 30px 35px 40px 10px;
+  text-align: left;
+}
+ 
+#header .container h1 {
+  color: darkred;
+  margin-top: 100px;
+}
+ 
+#header .container h4 {
+  color: rgb(51, 58, 65);
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+ 
+#header .more {
+  color: darkorange;
+  background: rgb(51, 58, 65);
+  font-size: 18px;
+  padding: 5px 35px 5px 35px;
+  margin-left: 0px 18px 0px 5px;
+  border-radius: 5px;
+}
+ 
+#header .more:hover {
+  color: red;
+  transition: color 0.5s;
+}
+ 
+/* Header End */
+/***************************/
+ 
+/***************************/
+/* Sub Header Start */
+ 
+#sub-header {
+  background-image: url(../imgs/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+ 
+#sub-header .container {
+  width: 55%;
+  margin-right: 40px;
+  padding: 20px 35px 40px 40px;
+}
+ 
+#sub-header .container h3 {
+  color: white;
+  line-height: 1.4em;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+ 
+/* Sub Header End */
+/***************************/
+ 
+/***************************/
+/* Articles Start */
+ 
+#articles h2 {
+  margin: 40px 0px 40px 0px;
+  color: darkred;
+}
+ 
+#articles .container .card img {
+  width: 100%;
+}
+ 
+#articles .container .card {
+  padding: 2px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+ 
+#articles .swiper-container .swiper-button-next{
+  background-image: url(../imgs/arrow.png);
+}
+ 
+#articles .swiper-container .swiper-button-prev {
+  background-image: url(../imgs/arrow.png);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+ 
+#articles .container .card .like {
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(85, 85, 85, 0.678);
+  color: white;
+  font-size: 22px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+ 
+#articles .container .card .like {
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgba(85, 85, 85, 0.678);
+  color: white;
+  font-size: 22px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+ 
+#articles .container .card .like:hover {
+  background-color: darkred;
+}
+ 
+#articles .container .card h4 {
+  color: darkred;
+}
+ 
+#articles .container .card p {
+  color: rgb(51, 58, 65);
+  margin-bottom: 25px;
+}
+ 
+#articles .card .card-btn {
+  padding: 5px 40px 5px 40px;
+  border-radius: 5px;
+  border-color: rgb(51, 58, 65);
+  color: white;
+  background-color: rgb(51, 58, 65);
+}
+ 
+#articles .card .card-btn:hover {
+  color: darkorange;
+  transition: color 0.5s;
+}
+ 
+#articles .card .btn-cont {
+  text-align: center;
+}
+ 
+/* Articles End */
+/***************************/
+ 
+
+/* Guide Start */
+ 
+#Guide {
+  overflow: hidden;
+  padding-top: 50px;
+  color: darkred;
+}
+#Guide .container {
+  display: flex;
+  justify-content: center; /* Center-align content horizontally */
+}
+#Guide .box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center; /* Center-align content within the box */
+}
+#Guide img {
+  margin-bottom: 10px; /* Add space below the image */
+}
+#Guide p {
+  margin-top: 0;
+  margin-bottom: 10px; /* Add space below the paragraph */
+}
+#Guide h2:last-child {
+  margin-bottom: 10px; /* Add space below the last heading */
+}
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #b5b9b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: #890a0a;
+}
+ 
+/* Guide End */
+
+
+/***************************/
+/* Requests Start */
+ 
+#requests {
+  background-color: rgb(233, 232, 232);
+  padding-bottom: 20px;
+}
+ 
+#requests .title h2 {
+  text-align: center;
+  color: darkred;
+  margin: 80px 0px 0px 0px;
+}
+ 
+#requests .title {
+  background-color: white;
+  padding-bottom: 25px;
+}
+ 
+#requests hr {
+  text-align: center;
+  color: darkred;
+  background-color: darkred;
+  height: 2px;
+  width: 10%;
+}
+ 
+#requests .row select {
+  width: 80%;
+  height: 35px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+ 
+#requests .row .search button {
+  background-color: lightgrey;
+  margin-top: 45px;
+  border-radius: 40px;
+  height: 45px;
+  width: 45px;
+  margin-left: 50px;
+}
+ 
+#requests .row .search {
+  text-align: center;
+}
+ 
+#requests .row .row {
+  background-color: white;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+ 
+#requests .row .row button {
+  padding: 30px 80px 30px 80px;
+  text-align: center;
+  margin: 40px 0px 30px 0px;
+  background-color: lightgrey;
+  border: none;
+  color: darkred;
+  font-size: 22px;
+  border-radius: 5px;
+}
+ 
+#requests .row .row button:hover {
+  background-color: rgb(51, 58, 65);
+  color: darkorange;
+}
+ 
+#requests .row .row .data {
+  margin: 30px 0px 30px 0px;
+  padding-left: 60px;
+}
+ 
+#requests .row .row .type {
+  color: darkred;
+  margin: 10px 0px 0px 70px;
+  text-align: center;
+}
+ 
+#requests .row .row .type h2 {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  padding: 50px 0px 0px 0px;
+  background-color: lightgrey;
+  border-radius: 100px;
+  border: 2px solid darkred;
+}
+ 
+#requests .more-req button {
+  background-color: rgb(51, 58, 65);
+  color: white;
+  padding: 5px 50px 5px 50px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+ 
+#requests .more-req {
+  text-align: center;
+}
+ 
+#requests .more-req button:hover {
+  color: darkorange;
+  transition: color 0.5s;
+}
+ 
+/* Requests End */
+/***************************/
+ 
+
+#dashboard {
+  background-color: #ffffff; /* Light background color */
+  padding: 1px 0; /* Add padding */
+  text-align: center; /* Center-align content */
+  margin-left: auto; /* Move the dashboard to the left */
+  margin-right: auto; /* Center-align the dashboard horizontally */
+}
+
+
+#dashboard .container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+}
+
+#dashboard .card {
+  background-color: #f4d2d2; /* Similar background color to charts */
+  padding: 1px; /* Add padding */
+  margin: 0 5px 10px; /* Add margin */
+  border-radius: 10px; /* Add border radius */
+  border-color: darkred; /* Border color */
+  box-shadow: 0 4px 8px rgba(214, 8, 8, 0.1); /* Add shadow */
+  max-width: calc(33.33% - 20px); /* Set max-width for each card to ensure they fit within the container */
+  color: darkred; /* Font color */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+#dashboard .card-title {
+  font-size: 24px; /* Title font size */
+  font-weight: bold; /* Title font weight */
+}
+
+#dashboard .card .card-text {
+  color: darkred; /* Font color */
+  font-weight: bold; /* Make font bold */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+  font-size: 24px; /* Font size */
+  text-align: center; /* Align text center */
+}
+
+#dashboard .card-heading {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+
+#donations {
+  background-color: #ffffff; /* Light background color */
+
+  text-align: center; /* Center-align content */
+  margin-left: auto; /* Move the dashboard to the left */
+  margin-right: auto; /* Center-align the dashboard horizontally */
+  
+}
+
+
+
+#donations .table {
+  margin-left: auto; /* Move the dashboard to the left */
+  margin-right: auto; /* Center-align the dashboard horizontally */
+  text-align: center;
+  background-color: #f4d2d2; /* Similar background color to charts */
+  padding: 1px; /* Add padding */
+  margin: 0 5px 10px; /* Add margin */
+  border-radius: 5px; /* Add border radius */
+  border-color: darkred; /* Border color */
+  box-shadow: 0 4px 8px rgba(214, 8, 8, 0.1); /* Add shadow */
+  color: darkred; /* Font color */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+}
+
+#donations .table th {
+  color: darkred; /* Font color */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+  font-size: 1rem; /* Font size */
+  font-weight: bold;
+  padding: px;
+  text-align: left;
+  border-bottom: 2px solid darkred; /* Border color */
+}
+
+#donations .table td {
+  color: darkred; /* Font color */
+  font-family: 'Times New Roman', Times, serif; /* Font family */
+  font-size: 0.9rem; /* Font size */
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Border color */
+}
+
+#donations .donation-heading {
+  color: darkred;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+
+/* About us */
+/*****************************************************************/
+ 
+#team-members {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 50px 0; /* Add padding */
+  text-align: center; /* Center-align content */
+}
+ 
+.team-member {
+  background-color: #fff; /* White background color for each member */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  margin-bottom: 30px; /* Add space between members */
+}
+ 
+.team-member:hover {
+  transform: translateY(-10px); /* Move up on hover */
+}
+ 
+.team-member img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Make images circular */
+  margin-bottom: 20px; /* Add some space below the image */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add shadow to images */
+}
+ 
+.team-member h4 {
+  font-size: 1.5rem; /* Larger font size for member names */
+  margin-bottom: 10px; /* Add space below the name */
+  color: #333; /* Dark text color */
+}
+ 
+.team-member p {
+  font-size: 1rem; /* Regular font size for additional info */
+  color: #666; /* Slightly lighter text color */
+}
+ 
+/* Style for LinkedIn and GitHub icons */
+.team-member a img {
+  margin-right: 10px; /* Add space between icons */
+  width: 30px; /* Set width for icons */
+  height: 30px; /* Set height for icons */
+  justify-content: center; /* Center icons horizontally */
+}
+
+/* Style for ERD */
+.erd {
+  background-color: #fff; /* White background color for each member */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  margin-bottom: 30px; /* Add space between members */
+}
+
+.erd:hover {
+  transform: translateY(-10px); /* Move up on hover */
+}
+
+.erd img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px; /* Add some space below the image */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add shadow to images */
+}
+
+.erd h4 {
+  font-size: 1.5rem; /* Larger font size for member names */
+  margin-bottom: 10px; /* Add space below the name */
+  color: #333; /* Dark text color */
+}
+
+.erd p {
+  font-size: 1rem; /* Regular font size for additional info */
+  color: #666; /* Slightly lighter text color */
+}
+
+/* Style for LinkedIn and GitHub icons */
+.erd a img {
+  margin-right: 10px; /* Add space between icons */
+  width: 30px; /* Set width for icons */
+  height: 30px; /* Set height for icons */
+  justify-content: center; /* Center icons horizontally */
+}
+
+ 
+/* About us */
+/*****************************************************************/
+/* Donor CRUD*/
+/* Add this CSS to style the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Donor CRUD */
+ 
+/***************************/
+/***************************/
+/* Footer Start */
+ 
+#footer {
+  background-color: rgb(51, 58, 65);
+  color: white;
+  padding: 20px 0;
+}
+
+#footer .foot-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#footer .footer-menu {
+  display: flex;
+  align-items: center;
+}
+
+#footer .menu {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  width: 200px;
+}
+
+#footer .menu li {
+  margin-bottom: 10px;
+}
+
+#footer .menu a {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+#footer .menu a:hover {
+  color: rgb(213, 3, 1);
+}
+
+@media (max-width: 768px) {
+  #footer .menu {
+      margin-bottom: 20px;
+  }
+}
+
+
+/* Footer End */
+/***************************/
+/***************************/
+ 
+ 
+/* Requests Page Start */
+/*****************************************************************/
+ 
+#navigator .container .path{
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  font-size: 22px;
+  padding: 10px 20px 10px 30px;
+  margin: 30px 0px 30px 0px;
+  width: 100%;
+}
+ 
+#requests .page-num{
+  margin-top: 40px;
+  padding-bottom: 0px;
+}
+ 
+#requests .page-num li a{
+  color: darkred;
+}
+ 
+#requests .page-num li a:hover{
+  color: white;
+  background-color: darkred
+}
+ 
+/*****************************************************************/
+ 
+ 
+ 
+/* Dashboard Start */
+/*****************************************************************/
+ 
+#dashboard .container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+#dashboard .container {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 77%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 5px 5px #e7e6e6;
+}
+ 
+#dashboard .container p{
+  margin: 30px 20px 0px 20px;
+  font-size: 16px;
+  color: gray;
+  text-align: justify;
+}
+ 
+/*****************************************************************/
+
+
+ 
+ 
+/* Contact Page Start */
+/*****************************************************************/
+ 
+#contact .container img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+ 
+#contact .container .call{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 30px;
+  margin: 0px 30px 40px 45px;
+  box-shadow: 2px 2px 5px 5px #e7e6e6;
+}
+ 
+#contact .container .info{
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 30px;
+  margin: 0px 0px 40px 0px;
+  box-shadow: 2px 2px 5px 5px #e7e6e6;
+}
+ 
+#contact .container .col-md-6{
+  max-width: 45%;
+}
+ 
+#contact .container .call hr{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+ 
+#contact .container .call h4{
+  padding-left: 20px;
+  padding-bottom: 10px;
+  font-size: 18px; /* Adjusted font size for responsiveness */
+  line-height: 1.5; /* Adjusted line height for readability */
+}
+ 
+#contact .container .call h3{
+  margin: 40px 0px 30px 0px;
+  text-align: center;
+  color: darkred;
+}
+ 
+#contact .container .call .icons{
+  text-align: center;
+}
+ 
+#contact .container .call .icons .fab{
+  padding: 0px 15px 0px 15px;
+}
+ 
+#contact .container .call .icons i:hover{
+  transform: translate(0,-10px);
+  -webkit-transform: translate(0,-10px);
+  -o-transform: translate(0,-10px);
+  -moz-transform: translate(0,-10px);
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+}
+ 
+#contact .container .call .fa-facebook-square{
+  color: darkblue;
+}
+ 
+#contact .container .call .fa-whatsapp-square{
+  color: darkgreen;
+}
+#contact .container .call .fa-twitter-square{
+  color: blue;
+}
+#contact .container .call .fa-youtube-square{
+  color: darkred;
+}
+#contact .container .call .fa-google-plus-square{
+  color: orangered;
+}
+ 
+#contact .container .title{
+  text-align: center;
+  background-color: darkred;
+  color: white;
+  padding-top: 12px;
+  border-top-right-radius: 5px;
+  border-top-Left-radius: 5px;
+  font-size: 28px;
+  height: 70px;
+}
+ 
+#contact .container form input{
+  width: 85%;
+  font-size: 20px;
+  height: 50px;
+  margin: 20px 0px 0px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+ 
+#contact .container form textarea{
+  width: 85%;
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid lightgray;
+  padding-left: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+ 
+#contact .container form button{
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 10px 40px 10px 40px;
+  margin-top: 5px;
+  background-color: darkred;
+  color: white;
+}
+ 
+#contact .container form button:hover{
+  background-color: rgba(9, 0, 29, 0.781);
+  color: white;
+}
+ 
+#contact .container form .reg-group{
+  text-align: center;
+  margin-top: 30px;
+}
+/*****************************************************************/
+ 
+ 
+/* Article Page Start */
+/*****************************************************************/
+ 
+#article .container .head-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 60%;
+  border: 10px solid rgb(226, 226, 226);
+}
+ 
+ 
+#article .container .details-container{
+  border: 1px solid lightgray;
+  padding-bottom: 30px;
+}
+ 
+#article .container .details-container p{
+  margin: 30px 30px 20px 30px;
+  font-size: 20px;
+}
+ 
+#article .container .details-container a{
+  font-size: 20px;
+  padding-left: 30px;
+}
+ 
+#article .container .icons {
+  padding: 10px 0px 0px 30px;
+}
+ 
+#article .container .icons .fab{
+  padding: 0px 15px 0px 0px;
+}
+ 
+#article .container .icons i:hover{
+  transform: translate(0,-10px);
+  -webkit-transform: translate(0,-10px);
+  -o-transform: translate(0,-10px);
+  -moz-transform: translate(0,-10px);
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+}
+ 
+#article .container .fa-facebook-square{
+  color: darkblue;
+}
+ 
+#article .container .fa-whatsapp-square{
+  color: darkgreen;
+}
+ 
+#article .container .fa-twitter-square{
+  color: blue;
+}
+ 
+#article .container .fa-youtube-square{
+  color: darkred;
+}
+ 
+#article .container .fa-google-plus-square{
+  color: orangered;
+}
+ 
+#article .container .details-container .title{
+  text-align: center;
+  background-color: darkred;
+  color: white;
+  padding-top: 12px;
+  border-top-right-radius: 5px;
+  border-top-Left-radius: 5px;
+  font-size: 28px;
+  height: 70px;
+}
+ 
+#article #articles{
+  margin-bottom: 90px;
+}
+ 
+/*****************************************************************/
+ 
+ 
+/* Donator Page Start */
+/*****************************************************************/
+ 
+#donator .container {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 77%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20%;
+  box-shadow: 2px 2px 5px 5px #e7e6e6;
+}
+ 
+#donator .container p{
+  margin: 50px 40px 50px 40px;
+  font-size: 20px;
+  color: gray;
+  text-align: justify;
+}
+ 
+#donator .container table tr th{
+  background-color: darkred;
+  color: white;
+  padding-left: 20px;
+  width: 100vw;
+}
+ 
+#donator .container table tr td{
+  padding-left: 20px;
+}
+ 
+#donator .container table tr{
+  margin-bottom: 30px;
+  border: 1px solid darkred;
+  border-radius: 10px;
+}
+ 
+#donator .container table {
+  font-size: 18px;
+  border: 1px solid darkred;
+  border-radius: 10px;
+}
+ 
+#donator .container iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+/*****************************************************************/

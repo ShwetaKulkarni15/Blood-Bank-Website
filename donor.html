@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ 
+ 
+    <!-- website font  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+ 
+    <title>Donors</title>
+</head>
+ 
+<body>
+ 
+    <!-- Navbar 2 Start -->
+    <section id="Nav2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" width="140" height="auto" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link selected" href="donor.html">Donors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Recipients.html">Recipients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bloodBag.html">Blood Bag Availability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar 2 End -->
+ 
+    <!-- Navigator Start -->
+    <section id="navigator">
+        <div class="container">
+            <div class="path">
+                <div class="path-main" style="color: darkred; display:inline-block;">Home</div>
+                <div class="path-directio" style="color: grey; display:inline-block;"> / Donors</div>
+            </div>
+ 
+        </div>
+    </section>
+    <!-- Navigator End -->
+ 
+    <!-- donator Start -->
+<!-- donator Start -->
+<section id="donator">
+    <div class="container">
+        <div class="text-center">
+            <h2 style="color: darkred; display: inline-block;">Donor Registration Form</h2>
+        </div>
+        <form id="addDonorForm">
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="DonorName">Donor Name:</label>
+                    <input type="text" id="DonorName" class="form-control" placeholder="Enter donor name" required>
+                </div>
+    
+                <div class="form-group col-md-4">
+                    <label for="Age">Age:</label>
+                    <input type="text" id="Age" class="form-control" placeholder="Enter age" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="RegistrationDate">Registration Date:</label>
+                    <input type="text" id="RegistrationDate" class="form-control" placeholder="Enter registration date" required>
+                </div>
+    
+                <div class="form-group col-md-4">
+                    <label for="BloodType">Blood Type:</label>
+                    <input type="text" id="BloodType" class="form-control" placeholder="Enter blood type" required>
+                </div>
+    
+                <div class="form-group col-md-4">
+                    <label for="Contact">Contact:</label>
+                    <input type="text" id="Contact" class="form-control" placeholder="Enter contact number" required>
+                </div>                
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Donor</button>
+        </form>
+<br>
+        <!-- Table to display existing donors -->
+        <table id="donorTable" class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>Donor Name</th>
+                    <th>Age</th>
+                    <th>Registration Date</th>
+                    <th>Blood Type</th>
+                    <th>Contact</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Donor data will be displayed here dynamically -->
+            </tbody>
+        </table>
+
+        <!-- Add this modal markup at the end of your HTML body -->
+        <div id="editDonorModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="form-group">
+                    <label for="newName">New Donor Name:</label>
+                    <input type="text" id="newName" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newAge">New Age:</label>
+                    <input type="text" id="newAge" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newRegistration">New Registration Date:</label>
+                    <input type="text" id="newRegistration" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newBloodType">New Blood Type:</label>
+                    <input type="text" id="newBloodType" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newContact">New Contact:</label>
+                    <input type="text" id="newContact" class="form-control" required>
+                </div>
+
+
+                <button id="saveChangesBtn" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- donator End -->
+
+
+
+    <section id="sub-footer"></section>
+ 
+   <!-- Footer Start -->
+   <section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="foot-info">
+                    <img src="imgs/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8 footer-menu">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="donor.html">Donors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="About-us.html">About Us</a></li>
+                            <li><a href="Recipients.html">Recipients</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="article.html">Articles</a></li>
+                            <li><a href="bloodBag.html">Availability</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/script.js"></script> 
+</body>
+ 
+</html>

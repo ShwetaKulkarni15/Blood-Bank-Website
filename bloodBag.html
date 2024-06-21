@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ 
+ 
+    <!-- website font  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+ 
+    <title>Blood Bag Availability</title>
+</head>
+ 
+<body>
+ 
+    <!-- Navbar 2 Start -->
+    <section id="Nav2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" width="140" height="auto" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donor.html">Donors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Recipients.html">Recipients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link selected" href="bloodBag.html">Blood Bag Availability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar 2 End -->
+ 
+    <!-- Navigator Start -->
+    <section id="navigator">
+        <div class="container">
+            <div class="path">
+                <div class="path-main" style="color: darkred; display:inline-block;">Home</div>
+                <div class="path-directio" style="color: grey; display:inline-block;"> / Blood Bag Availability</div>
+            </div>
+ 
+        </div>
+    </section>
+    <!-- Navigator End -->
+ 
+    <!-- donator Start -->
+<!-- donator Start -->
+<section id="donator">
+    <div class="container">
+        <div class="text-center">
+            <h2 style="color: darkred; display: inline-block;">Blood Bags Available</h2>
+        </div>
+        <form id="addBBForm">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="DonationDate">Donation Date</label>
+                    <input type="text" id="DonationDate" class="form-control" placeholder="Enter donation date" required>
+                </div>
+    
+                <div class="form-group col-md-6">
+                    <label for="ExpiryDate">Expiry Date</label>
+                    <input type="text" id="ExpiryDate" class="form-control" placeholder="Enter expiry date" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="BloodBagsBloodType">Blood type</label>
+                    <input type="text" id="BloodBagsBloodType" class="form-control" placeholder="Enter Blood Type" required>
+                </div>
+    
+                <div class="form-group col-md-6">
+                    <label for="Volume">Volume</label>
+                    <input type="text" id="Volume" class="form-control" placeholder="Enter Volume" required>
+                </div>                
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Blood Bags</button>
+        </form>
+        <br>
+
+        <!-- Table to display existing donors -->
+        <table id="BBTable" class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>Donation Date</th>
+                    <th>Expiry Date</th>
+                    <th>Blood Type</th>
+                    <th>Volume</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Donor data will be displayed here dynamically -->
+            </tbody>
+        </table>
+
+        <!-- Add this modal markup at the end of your HTML body -->
+        <div id="editBBModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="form-group">
+                    <label for="newBBDonationDate">Donoation Date</label>
+                    <input type="text" id="newBBDonationDate" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newBBExpiryDate">Expiry Date</label>
+                    <input type="text" id="newBBExpiryDate" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newBBBloodType">Blood type</label>
+                    <input type="text" id="newBBBloodType" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newBBVolume">Volume</label>
+                    <input type="text" id="newBBVolume" class="form-control" required>
+                </div>
+
+
+                <button id="saveChangesBtn" class="btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- donator End -->
+
+
+
+    <section id="sub-footer"></section>
+ 
+ <!-- Footer Start -->
+ <section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="foot-info">
+                    <img src="imgs/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8 footer-menu">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="donor.html">Donors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="About-us.html">About Us</a></li>
+                            <li><a href="Recipients.html">Recipients</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="article.html">Articles</a></li>
+                            <li><a href="bloodBag.html">Availability</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/BloodBags.js"></script> 
+</body>
+ 
+</html>

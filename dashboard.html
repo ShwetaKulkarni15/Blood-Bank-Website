@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- website font  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Add GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+
+    <!-- Navbar 2 Start -->
+    <section id="Nav2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" width="140" height="auto" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="article.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link selected" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donor.html">Donors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Recipients.html">Recipients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bloodBag.html">Blood Bag Availability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar 2 End -->
+
+    <!-- Navigator Start -->
+    <section id="navigator">
+        <div class="container">
+            <div class="path">
+                <div class="path-main" style="color: darkred; display:inline-block;">Home</div>
+                <div class="path-directio" style="color: grey; display:inline-block;"> / Dashboard</div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Navigator End -->
+
+
+
+    <!-- dashboard Start -->
+    <section id="dashboard">
+        <div class="container">
+            <!-- Cards -->
+            <div class="card" id="card1">
+                <div class="card-body">
+                    <i class="fas fa-heartbeat" style="font-size:24px; padding-right: 10px;"></i>
+                    <h5 class="card-title">Number of Lives Saved</h5>
+                    <p class="card-text">500</p>
+                </div>
+            </div>
+            <div class="card" id="card2">
+                <div class="card-body">
+                    <i class="fas fa-users" style="font-size:24px; padding-right: 10px;"></i>
+                    <h5 class="card-title"> Number of Donors</h5>
+                    <p class="card-text">200</p>
+                </div>
+            </div>
+            <div class="card" id="card3">
+                <div class="card-body">
+                    <i class="fas fa-tint" style="font-size:24px; padding-right: 10px;"></i>
+                    <h5 class="card-title">Quantity of Blood (liters)</h5>
+                    <p class="card-text">1000</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Charts -->
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="barChart" aria-label="Bar Chart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="lineChart" aria-label="Line Chart"></canvas>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <canvas id="pieChart" aria-label="Pie Chart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div id="donations" class="dashboard">
+            <div id="donations" class="dashboard">
+                <h2 class="donation-heading">Recent Donations</h2>
+                <div class="container">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="card-heading">Donor Name</th>
+                                <th scope="col" class="card-heading">Date</th>
+                                <th scope="col" class="card-heading">Blood Group</th>
+                                <th scope="col" class="card-heading">Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="card-text">Ahmed Mohamed</td>
+                                <td class="card-text">2024-04-18</td>
+                                <td class="card-text">AB+</td>
+                                <td class="card-text">23</td>
+                            </tr>
+                            <tr>
+                                <td class="card-text">Sara Ali</td>
+                                <td class="card-text">2024-04-17</td>
+                                <td class="card-text">O-</td>
+                                <td class="card-text">32</td>
+                            </tr>
+                            <tr>
+                                <td class="card-text">John Doe</td>
+                                <td class="card-text">2024-04-16</td>
+                                <td class="card-text">A+</td>
+                                <td class="card-text">28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- dashboard End -->
+
+    <section id="sub-footer"></section>
+
+  <!-- Footer Start -->
+  <section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="foot-info">
+                    <img src="imgs/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-8 footer-menu">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="donor.html">Donors</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="About-us.html">About Us</a></li>
+                            <li><a href="Recipients.html">Recipients</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="article.html">Articles</a></li>
+                            <li><a href="bloodBag.html">Availability</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <ul class="menu">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Add GSAP animations -->
+    <script>
+        window.onload = function () {
+            gsap.from("#card1", { duration: 1, x: -200, opacity: 0 });
+            gsap.from("#card2", { duration: 1, y: -200, opacity: 0 });
+            gsap.from("#card3", { duration: 1, x: 200, opacity: 0 });
+            gsap.from("#card4", { duration: 1, x: 200, opacity: 0 });
+        }
+    </script>
+</body>
+
+</html>
